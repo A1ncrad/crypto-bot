@@ -1,0 +1,36 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: calc(53rem / 16);
+}
+
+.navigation {
+	display: none;
+	gap: 2em;
+}
+
+.link {
+	font-size: calc(20rem / 16);
+	font-weight: 500;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.button {
+	composes: buttonSecondary from './components.module.css';
+}
+
+@media (min-width: 676px) {
+	.header {
+		padding-top: calc(40rem / 16);
+	}
+
+	.navigation {
+		display: flex;
+	}
+}
