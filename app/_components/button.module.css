@@ -53,8 +53,12 @@
 }
 
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
 	.buttonSecondary {
 		composes: buttonSecondaryDark;
 	}
-} */
+
+	.buttonSecondary:hover {
+		background-color: transparent;
+	}
+}

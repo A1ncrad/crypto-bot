@@ -22,7 +22,7 @@
 }
 
 .button {
-	composes: buttonSecondary from './components.module.css';
+	composes: buttonSecondary from './button.module.css';
 }
 
 @media (min-width: 676px) {

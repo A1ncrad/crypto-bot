@@ -14,14 +14,14 @@
 	box-sizing: border-box;
 }
 
-/* 
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary: #0D0D12;
 		--secondary: #18181D;
 		--text: #fff;
 	}
-} */
+}
 
 * {
 	margin: 0;
@@ -50,12 +50,12 @@ button {
 	outline: none;
 }
 
-/* 
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;
 	}
-} */
+}
 
 
 body>* {

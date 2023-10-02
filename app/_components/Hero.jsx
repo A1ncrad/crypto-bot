@@ -10,8 +10,13 @@ export default function Hero() {
 
 				<div className={styles.examples}>
 					<picture>
-						<source srcSet="/_img/hero__examples--big.png" media="(min-width: 996px)"/>
-						<img className={styles.bots} src="/_img/hero__examples.png" alt="Bots"/>
+						
+						<source srcSet='img/hero__examples--big--dark.png' media='(min-width: 996px) and (prefers-color-scheme: dark)'/>
+						<source srcSet='img/hero__examples--dark.png' media='(prefers-color-scheme: dark)'/>
+						<source srcSet="/img/hero__examples--big.png" media="(min-width: 996px)"/>
+							
+					
+						<img className={styles.bots} src="/img/hero__examples.png" alt="Bots"/>
 					</picture>
 
 					<p className={styles.text}>Popular bots use Crypto Pay</p>
@@ -19,8 +24,8 @@ export default function Hero() {
 			</div>
 
 			<picture>
-				{/* <source media="(prefers-color-scheme: dark)" srcSet="/_img/hero__image--dark.png" /> */}
-				<img className={styles.image} src="/_img/hero__image.png" alt="Phone" />
+				<source media="(prefers-color-scheme: dark)" srcSet="/img/hero__image--dark.png" />
+				<img className={styles.image} src="/img/hero__image.png" alt="Phone" />
 			</picture>
 
 		</section>

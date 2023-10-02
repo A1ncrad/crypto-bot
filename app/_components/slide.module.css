@@ -1,0 +1,23 @@
+.slide {
+  padding: 2rem calc(20rem / 16);
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.image {
+  aspect-ratio: 1;
+}
+
+.body {
+}
+
+.decoration {
+  color: var(--blue);
+}
+
+.button {
+  composes: button from "./button.module.css";
+  width: 100%;
+}

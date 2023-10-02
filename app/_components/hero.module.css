@@ -49,11 +49,8 @@
 	object-fit: contain;
 }
 
-@media (min-width: 500px) {
-	.hero {}
-}
 
-@media (min-width: 996px) {
+@media (min-width: 767px) {
 	.hero {
 		flex-direction: row;
 		justify-content: space-between;
@@ -87,7 +84,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
 	.title {
 		font-size: calc(80rem / 16);
 	}
