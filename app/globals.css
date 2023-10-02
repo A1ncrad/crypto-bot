@@ -59,21 +59,18 @@ button {
 
 
 body>* {
-	padding-left: calc(20em / 16);
-	padding-right: calc(20em / 16);
+	padding-inline: calc(20em / 16);
 }
 
 @media (min-width: 767px) {
 	body>* {
-		padding-left: calc(50em / 16);
-		padding-right: calc(50em / 16);
+		padding-inline: calc(50em / 16);
 	}
 }
 
 
 @media (min-width: 1200px) {
 	body>* {
-		padding-left: calc(200em / 16);
-		padding-right: calc(200em / 16);
+		padding-inline: calc(200em / 16);
 	}
 }

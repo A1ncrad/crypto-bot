@@ -5,8 +5,8 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<picture>
-				<source srcSet='/img/logo--big.png' media='(min-width: 996px)'/>
-				<img src='/img/logo.png' alt='Logo'/>
+				<source srcSet='/img/logo--big.png' media='(min-width: 996px)' />
+				<img src='/img/logo.png' alt='Logo' />
 			</picture>
 
 			<nav className={styles.navigation}>
@@ -14,7 +14,7 @@ export default function Header() {
 				<a className={styles.link} href="#features">Features</a>
 				<a className={styles.link} href="#instruction">How to start</a>
 			</nav>
-			<button className={styles.button}>Get started</button>
+			<a className={styles.button}>Get started</a>
 		</header>
-		)
+	)
 }

@@ -1,0 +1,52 @@
+.slider {
+	padding-block: 2rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	background-color: var(--secondary);
+}
+
+.track {
+	display: grid;
+	grid-template-columns: 100% 100%;
+	overflow: hidden;
+}
+
+.slide {
+
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+
+	text-align: center;
+}
+
+.image {
+	border-radius: 40px;
+}
+
+.body {}
+
+.title {
+	font-size: calc(32rem / 16);
+	color: var(--white);
+}
+
+.decoration {
+	color: var(--blue);
+}
+
+.text {
+	composes: text from "../text.module.css";
+
+	color: var(--white);
+	margin-top: calc(24rem / 16);
+}
+
+.button {
+	composes: button from "../button.module.css";
+
+	margin-top: calc(54rem / 16);
+	width: 100%;
+}

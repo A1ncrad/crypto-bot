@@ -1,0 +1,16 @@
+.examples {
+	margin-top: calc(24rem / 16);
+}
+
+@media (min-width: 767px) {
+	.examples {
+		margin-top: calc(56rem / 16);
+	}
+}
+
+.text {
+	composes: text from '../text.module.css';
+
+	margin-top: calc(12rem / 16);
+}
+

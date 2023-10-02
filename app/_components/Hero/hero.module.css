@@ -8,17 +8,15 @@
 	text-align: center;
 }
 
-.description {}
 
 .title {
 	font-size: calc(46rem / 16);
-	
+
 	font-weight: 629;
 	line-height: 1.1;
 	letter-spacing: -1.38px;
 
-	margin-bottom: calc(24rem / 16);
-	max-width: 692px;
+	max-width: 700px;
 }
 
 .decoration {
@@ -26,25 +24,20 @@
 }
 
 .text {
-	font-size: calc(18rem / 16);
-	line-height: 1.2;
+	composes: text from "../text.module.css";
+
+	margin-top: calc(24rem / 16);
 }
 
 .button {
-	composes: button from './button.module.css';
+	composes: button from '../button.module.css';
+
 	margin-top: calc(12rem / 16);
 }
 
-.examples {
-	margin-top: calc(24rem / 16);
-	margin-bottom: calc(52rem / 16);
-}
-
-.bots {
-	margin-bottom: calc(12rem / 16);
-}
 
 .image {
+	margin-top: calc(20rem / 16);
 	max-width: 100%;
 	object-fit: contain;
 }
@@ -55,7 +48,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		gap: 2rem;
-		
+
 		text-align: left;
 
 		margin-top: calc(60rem / 16);
@@ -63,24 +56,17 @@
 	}
 
 	.image {
+		margin-top: 0;
 		height: 100%;
 	}
 
-	.title {
-		margin-bottom: calc(32rem / 16);
-	}
-
 	.text {
-		font-size: calc(20rem / 16);
+		margin-top: calc(32rem / 16);
 		max-width: 350px;
 	}
 
 	.button {
 		margin-top: calc(32rem / 16);
-	}
-
-	.examples {
-		margin-top: calc(56rem / 16);
 	}
 }
 

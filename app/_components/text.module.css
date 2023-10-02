@@ -1,0 +1,11 @@
+.text {
+	font-size: calc(18rem / 16);
+	line-height: 1.2;
+}
+
+
+@media (min-width: 996px) {
+	.text {
+		font-size: calc(20rem / 16);
+	}
+}
