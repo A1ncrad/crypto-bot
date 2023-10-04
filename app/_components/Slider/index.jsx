@@ -1,25 +1,48 @@
 "use client"
 
 import styles from "./slider.module.css";
-import { useEffect } from "react";
 
 
 
 export default function Slider() {
-	let track;
+	let position;
+	let startPositon;
 
-	function nextSlide() {
-		useEffect(() => {
-			track = document.getElementsByClassName(styles.track);
-		}, [])
+	function getPosition(e){
+		startPositon = e.touches[0].clientX;
+	}
 
-		track?.styles?.transform = `translateX(-100%)`;
+	function updatePosition(e) {
+		position = e.touches[0].clientX;
+	}
+
+	function nextSlide(e) {
+		const track = document.getElementById("track");
+		const gap = parseFloat( getComputedStyle(track).gap );
+
+		if (startPositon - position < 50) {
+			track.style.transform = `translateX(-${track.offsetWidth + gap}px)`;
+		} else {
+			track.style.transform = `translateX(${track.offsetWidth + gap}px)`;
+		}
+		
+
+
+
+
+		
+
+
 	}
 
 	return (
-		<div className={styles.slider} onScroll={nextSlide}>
+		<div className={styles.slider}  onTouchStart={getPosition} onTouchMove={updatePosition} onTouchEnd={nextSlide} id="slider">
 
-			<div className={styles.track} onScroll={nextSlide}>
+			<div className={styles.container}>
+
+				<div className={styles.track} id="track">
+
+				<div className={styles.track}>
 				<section className={styles.slide}>
 					<img className={styles.image} src="/img/slider/usecase1.jpg" alt="Usecase" />
 
@@ -39,6 +62,10 @@ export default function Slider() {
 						<button className={styles.button}>Open API Docs</button>
 					</div>
 				</section>
+				</div>
+
+				</div>
+
 			</div>
 
 		</div>
